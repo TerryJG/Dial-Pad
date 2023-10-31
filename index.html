@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container"> <!-- Container for white background & alignment -->
+        <div class="output" id="display"></div> <!-- Output display -->
+    
+        <div class="numpad-wrapper">
+            <!-- First Row -->
+            <div class="num-letter" id="1">1
+                <div class="alphabet">temp</div>
+            </div>
+            <div class="num-letter" id="2">2
+                <div class="alphabet">ABC</div>
+            </div>
+            <div class="num-letter" id="3">3
+                <div class="alphabet">DEF</div>
+            </div>
+    
+            <!-- Second Row -->
+            <div class="num-letter" id="4">4
+                <div class="alphabet">GHI</div>
+            </div>
+            <div class="num-letter" id="5">5
+                <div class="alphabet">JKL</div>
+            </div>
+            <div class="num-letter" id="6">6
+                <div class="alphabet">MNO</div>
+            </div>
+    
+            <!-- Third Row -->
+            <div class="num-letter" id="7">7
+                <div class="alphabet">PQRS</div>
+            </div>
+            <div class="num-letter" id="8">8
+                <div class="alphabet">TUV</div>
+            </div>
+            <div class="num-letter" id="9">9
+                <div class="alphabet">WXYZ</div>
+            </div>
+    
+            <!-- Fourth Row -->
+            <div class="num-letter" id="*">*</div>
+            <div class="num-letter" id="0">0</div>
+            <div class="num-letter" id="#">#</div>
+        </div>
+
+            <!-- Function Row -->
+        <div class="func-wrapper">
+            <button class="func-button" id="func-button-id">
+                <img src="assets\phone-svgrepo-com.svg" id="call-img"></button>
+            <button class="func-button" id="back">
+                <img src="assets\back-svgrepo-com.svg" id="back-img"></button>  
+        </div> 
+    </div>
+    <script src="assets\sound\jquery-3.6.0.min.js"></script> <!-- JSQuery script for tone sound-->
+    <script src="web_audio.js"></script> <!-- activate sound when button is pressed -->
+    <script src="key_map.js"></script> <!-- keyboard mapping-->
+    <script src="display.js"></script> <!-- display num entered -->
+</body>
+</html>
