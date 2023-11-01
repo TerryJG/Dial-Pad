@@ -1,4 +1,4 @@
-Functional Dialpad by Terrance Gibson
+Functional Dialpad by Terrance
 
 // Credits //
 

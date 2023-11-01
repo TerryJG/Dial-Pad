@@ -63,3 +63,14 @@ document.addEventListener("keyup", (event) => {
         element.classList.remove("key-input");
     }
 });
+
+function handleTouch(event) {
+    const touchedElement = event.target;
+    if (touchedElement.classList.contains("num-letter")) {
+        const num = touchedElement.id;
+        document.getElementById("display").textContent += num;
+    }
+}
+
+const numpadWrapper = document.querySelector(".numpad-wrapper");
+numpadWrapper.addEventListener("touchstart", handleTouch);
